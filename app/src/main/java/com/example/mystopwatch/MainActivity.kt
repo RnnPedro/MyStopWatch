@@ -5,7 +5,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.*
 import com.example.mystopwatch.ui.MainScreen
-import com.example.mystopwatch.ui.StopWatch
 import com.example.mystopwatch.ui.theme.MyStopWatchTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +12,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyStopWatchTheme {
-                val stopWatch = remember {StopWatch()}
+                val stopWatch = remember { StopWatch() }
                 MainScreen(
                     stopWatch.formattedTime,
                     stopWatch.isTimeRunning,

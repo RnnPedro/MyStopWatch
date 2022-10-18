@@ -1,4 +1,4 @@
-package com.example.mystopwatch.ui
+package com.example.mystopwatch
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
